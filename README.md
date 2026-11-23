@@ -88,8 +88,8 @@ EC2 내부에서 Nginx를 설치하고 실행합니다.
 ```bash
 sudo apt update
 sudo apt install -y nginx
-sudo systemctl enable --now nginx
-sudo systemctl status nginx --no-pager
+sudo systemctl enable --now nginx # Nginx가 서버 부팅 시 자동으로 실행되도록 설정하고, 지금 즉시 실행
+sudo systemctl status nginx --no-pager # Nginx 웹 서버가 정상적으로 실행 중인지 상태를 확인
 ```
 
 서비스 상태에서 `enabled` 및 `active (running)`을 확인했습니다.
