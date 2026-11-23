@@ -112,8 +112,8 @@ sudo systemctl status nginx --no-pager # Nginx 웹 서버가 정상적으로 실
 EC2에서 다음 명령을 실행했습니다. `-I`는 HEAD 요청으로 응답 헤더를 확인하는 옵션입니다.
 
 ```bash
-curl -I http://localhost
-curl -I https://example.com
+curl -I http://localhost # 명령어를 실행하는 서버에 HTTP 요청을 보내 웹 서버가 응답하는지 확인
+curl -I https://example.com # 외부 인터넷에 있는 example.com 서버에 HTTPS 요청을 보내 응답을 확인
 ```
 
 | 검증 | 캡처에서 확인한 결과 |
